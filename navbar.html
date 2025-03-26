@@ -1,11 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
 <body>
-    
+  <section>
+    <header>
+      <div class="navBar my-5 mx-7">
+        <div
+          class="container-fluid flex items-center justify-between px-5 bg-stone-100 shadow-md rounded-3xl h-16"
+        >
+          <!-- Logo Section -->
+          <div class="log-sec">
+            <a class="flex items-center gap-2" href="#">
+              <img
+                src="https://energizeexpressllp.com/assets/img/logoee.png"
+                alt="logo"
+                width="80"
+              />
+              <h1 class="text-xl text-cyan-700 font-bold">Energize Express</h1>
+            </a>
+          </div>
+
+          <!-- Hamburger Menu (Mobile Only) -->
+          <button class="md:hidden text-cyan-700" id="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+
+          <!-- Navigation Menu -->
+          <nav id="menu" class="hidden md:flex md:gap-7">
+            <ul class="flex flex-col md:flex-row gap-7">
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >Product & Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >Health on Security</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline hover:decoration-cyan-600"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Mobile Menu (Dropdown) -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden bg-stone-100 rounded-3xl shadow-md mt-3 p-5"
+        >
+          <ul class="flex flex-col gap-5">
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >Product & Services</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >Health on Security</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline hover:decoration-cyan-600"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section>
+        <div class="hero-sec"></div>
+      </section>
+    </header>
+  </section>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
-</html>
