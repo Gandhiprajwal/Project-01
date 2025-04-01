@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energiz Express</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0052CC",
+              secondary: "#253858",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <nav id="navbar" class="fixed top-0 w-full z-10"></nav>
+    <!-- Hero Section -->
+    <div class="bg-white relative top-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl font-bold text-secondary mb-4">
+              Our Mission & Our Vision
+            </h1>
+            <p class="text-gray-600">
+              Our mission is to provide exceptional portfolio management
+              solutions, and our vision is to make financial markets and
+              accessible to all.
+            </p>
+          </div>
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/ef64/fa45/cdcb8f7ebac358f28cf4ed0ec261621a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=mjhzR35XPcOBW8g0A7rr6PKgX69WzXKg1~P6XWfOU4Z5zSdTe5YsWYuXsMHG6bs1KrO0PfAnVVuQwHTIlQT-dHTNskg8ELx8ELGwzW5Tq5AmyJ8OH9XtCGRIwMbKSFdDZsfecT1zkNRjl7W9LUzdYFIR182vfGAEgl0p7n3CBdwPQZvVhYdrh0epMXRoaDqDOa1WCX8Yj0iE-M6q51wKnG2W4ji3gHscFsA2ORBv8aI~~IbckLDB2mqid0j-ej6W-qF~yDGyjsXIPChB5HpSRG0aPcd8jYhzY16B6Tsyh3tKNYR76R4YFLlLjnedcs2DnHBkVlEFU67EPZiaLjwLZw__"
+              alt="Team Meeting"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="bg-gray-50 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-primary mb-2">
+          ABOUT US
+        </h2>
+        <p class="text-center text-gray-600 mb-12">
+          Passionate People, Innovative Solutions <br />
+          Our dedicated experts are committed to delivering groundbreaking
+          solutions that transform industries and <br />
+          exceed expectations.
+        </p>
+
+        <!-- History Section -->
+        <div class="lg:flex lg:items-center lg:space-x-12 mb-16">
+          <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">History</h3>
+            <p class="text-gray-600">
+              Founded in 2018, our portfolio management company was established
+              by a team of dedicated professionals with extensive experience in
+              the financial and tech sectors. With a shared vision and Mr. Arka
+              Sharma's strong business acumen, we've consistently delivered
+              exceptional results through innovative solutions.
+            </p>
+          </div>
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="https://images.unsplash.com/photo-1554260570-9140fd3b7614"
+              alt="Growth"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div
+          class="lg:flex lg:items-center lg:space-x-12 flex-row-reverse mb-16 gap-8"
+        >
+          <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Vision</h3>
+            <p class="text-gray-600">
+              Our vision is to be recognized as a leading portfolio management
+              company that consistently delivers exceptional value to our
+              clients. We strive to set new standards in the industry by
+              combining innovative solutions with disciplined investment
+              approaches.
+            </p>
+          </div>
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="https://images.unsplash.com/photo-1533750349088-cd871a92f312"
+              alt="Vision"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+        </div>
+
+        <!-- Mission Section -->
+        <div class="lg:flex lg:items-center lg:space-x-12">
+          <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <p class="text-gray-600">
+              Our mission is to provide the highest quality portfolio management
+              solution for our clients by providing innovative investment
+              strategies and professional portfolio management. We maintain the
+              highest standards of risk-adjusted returns by adhering to a
+              disciplined investment process.
+            </p>
+          </div>
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+              alt="Mission"
+              class="rounded-lg shadow-lg w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

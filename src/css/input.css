@@ -1,4 +1,7 @@
 @import "tailwindcss";
+body{
+  /* overflow-x: hidden; */
+}
 /* .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
