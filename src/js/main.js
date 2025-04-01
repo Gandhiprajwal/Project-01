@@ -67,3 +67,20 @@ fetch("services.html")
     document.getElementById("services").innerHTML = data;
   })
   .catch((err) => console.log(err));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("news-container");
+
+  fetch("news.html")
+    .then((response) => {
+      if (!response.ok) throw new Error("Network error");
+      return response.text();
+    })
+    .then((data) => {
+      container.insertAdjacentHTML("beforeend", data); // Append the HTML content
+    })
+    .catch((error) => {
+      console.error("Error loading news:", error);
+      container.innerHTML = "<p>Failed to load news content.</p>";
+    });
+});
