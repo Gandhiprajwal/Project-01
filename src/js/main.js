@@ -60,13 +60,13 @@ fetch("footer.html")
 //   })
 //   .catch((err) => console.log(err));
 
-// // services
-// fetch("services.html")
-//   .then((res) => res.text())
-//   .then((data) => {
-//     document.getElementById("services").innerHTML = data;
-//   })
-//   .catch((err) => console.log(err));
+// services
+fetch("services.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("services").innerHTML = data;
+  })
+  .catch((err) => console.log(err));
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   const container = document.getElementById("news-container");
